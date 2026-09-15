@@ -1,0 +1,22 @@
+# Cabeceras para Cloudflare Pages
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+# Las fotos no cambian casi nunca
+/assets/img/*
+  Cache-Control: public, max-age=604800
+
+# CSS y JS llevan ?v= en el HTML, así que basta una hora
+/assets/css/*
+  Cache-Control: public, max-age=3600
+/assets/js/*
+  Cache-Control: public, max-age=3600
+
+# El HTML siempre fresco
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

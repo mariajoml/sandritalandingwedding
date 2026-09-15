@@ -65,6 +65,25 @@ negro sobre transparencia; el CSS lo vuelve blanco donde hace falta.
 `index.html` carga los assets con `?v=9`. Sube ese número al cambiarlos para
 que los navegadores no sirvan la versión vieja.
 
-## Publicar en GitHub Pages
+## Publicar en Cloudflare Pages
 
-En *Settings → Pages*, elegir la rama `main` y la carpeta `/web`.
+El repositorio es privado y Cloudflare Pages funciona con repos privados sin
+costo. En <https://dash.cloudflare.com> → *Workers & Pages* → *Create* →
+*Pages* → *Connect to Git*, elegir `sandritalandingwedding` y dejar:
+
+| Campo | Valor |
+|---|---|
+| Framework preset | None |
+| Build command | *(vacío)* |
+| Build output directory | `/` |
+| Root directory | `/` |
+
+No hay build: el sitio se sirve tal cual. Cada `git push` a `main` vuelve a
+desplegar solo.
+
+Para el dominio propio: *Custom domains* → *Set up a domain*. Si el dominio ya
+está en Cloudflare, el DNS se configura solo. Si está en otro proveedor, la
+pantalla indica el CNAME que hay que crear. El HTTPS lo emite Cloudflare.
+
+El archivo `_headers` define caché y cabeceras de seguridad; lo lee Cloudflare
+Pages automáticamente.
