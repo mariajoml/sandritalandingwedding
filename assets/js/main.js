@@ -57,6 +57,17 @@
   }
   if (!reduce) $$('.split').forEach(splitWords);
 
+  // al cambiar de idioma el texto se reescribe: hay que volver a partirlo
+  document.addEventListener('langchange', function () {
+    if (reduce) return;
+    $$('.split').forEach(function (el) {
+      var visible = el.classList.contains('in');
+      el.classList.remove('in');
+      splitWords(el);
+      if (visible) requestAnimationFrame(function () { el.classList.add('in'); });
+    });
+  });
+
   /* ---------- aparición al hacer scroll ---------- */
   var targets = $$('.reveal, .split');
   if ('IntersectionObserver' in window && !reduce) {
@@ -96,7 +107,7 @@
   function setMenu(open) {
     menu.hidden = !open;
     burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    burger.setAttribute('aria-label', window.I18N.t(open ? 'nav.cerrar' : 'nav.abrir'));
     document.body.style.overflow = open ? 'hidden' : '';
     document.body.classList.toggle('menu-open', open);
   }
@@ -242,7 +253,7 @@
   figures.forEach(function (fig, n) {
     fig.setAttribute('tabindex', '0');
     fig.setAttribute('role', 'button');
-    fig.setAttribute('aria-label', 'Ampliar: ' + ($('img', fig).alt || 'foto'));
+    fig.setAttribute('aria-label', window.I18N.t('pf.ampliar') + ': ' + ($('img', fig).alt || ''));
     fig.addEventListener('click', function () { openLb(n); });
     fig.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(n); }
@@ -289,6 +300,11 @@
   var WHATSAPP = '573102913750';
   var CORREO = 'sandrariveroseventos@gmail.com';
 
+  $$('[data-ph]').forEach(function (el) {
+    el.addEventListener('focus', function () { el.placeholder = el.dataset.ph || ' '; });
+    el.addEventListener('blur', function () { el.placeholder = ' '; });
+  });
+
   var form = $('#form');
   var err = $('#formErr');
 
@@ -297,22 +313,24 @@
     err.hidden = true;
 
     if (!form.checkValidity()) {
-      err.textContent = 'Revisen los campos marcados: faltan los nombres o el correo.';
+      err.textContent = window.I18N.t('for.error');
       err.hidden = false;
       form.reportValidity();
       return;
     }
 
     var d = new FormData(form);
+    var T = window.I18N.t;
+    var sin = T('wa.pordefinir');
     var lineas = [
-      'Hola Sandra, nos gustaría hablar de nuestra boda.',
+      T('wa.saludo'),
       '',
-      'Pareja: ' + (d.get('nombre') || '—'),
-      'Correo: ' + (d.get('email') || '—'),
-      'Fecha estimada: ' + (d.get('fecha') || 'por definir'),
-      'Invitados: ' + (d.get('invitados') || 'por definir'),
-      'Lugar: ' + (d.get('lugar') || 'por definir'),
-      'Servicio: ' + (d.get('servicio') || '—')
+      T('wa.pareja') + ': ' + (d.get('nombre') || '—'),
+      T('wa.correo') + ': ' + (d.get('email') || '—'),
+      T('wa.fecha') + ': ' + (d.get('fecha') || sin),
+      T('wa.invitados') + ': ' + (d.get('invitados') || sin),
+      T('wa.lugar') + ': ' + (d.get('lugar') || sin),
+      T('wa.servicio') + ': ' + (d.get('servicio') || '—')
     ];
     if (d.get('mensaje')) lineas.push('', d.get('mensaje'));
     var texto = encodeURIComponent(lineas.join('\n'));
@@ -320,7 +338,7 @@
     if (WHATSAPP.indexOf('X') !== -1) {
       // Sin número configurado: abrimos el correo para no perder la consulta.
       window.location.href = 'mailto:' + CORREO +
-        '?subject=' + encodeURIComponent('Boda — ' + (d.get('nombre') || '')) +
+        '?subject=' + encodeURIComponent(T('wa.asunto') + ' — ' + (d.get('nombre') || '')) +
         '&body=' + texto;
       return;
     }

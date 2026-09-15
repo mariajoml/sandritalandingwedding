@@ -215,6 +215,29 @@ body.menu-open .nav__logo{ filter:none; }
 }
 .nav__links a:hover span::after{ transform:scaleX(1); transform-origin:left; }
 
+/* interruptor de idioma */
+.lang{ display:flex; align-items:center; gap:7px; }
+.lang i{
+  font-style:normal; font-size:.6rem; color:currentColor; opacity:.4;
+}
+.lang button{
+  background:none; border:0; padding:4px 1px; cursor:pointer;
+  font-family:var(--sans); font-size:.68rem; font-weight:300;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:inherit; opacity:.55;
+  transition:opacity .4s var(--e);
+}
+.lang button:hover{ opacity:.85; }
+.lang button.is-on{ opacity:1; }
+
+.nav .lang{ color:#fff; text-shadow:0 1px 14px rgba(0,0,0,.45); }
+.nav.is-stuck .lang{ color:var(--ink); text-shadow:none; }
+
+.lang--menu{
+  margin-top:44px; color:var(--ink); gap:14px;
+}
+.lang--menu button{ font-size:.72rem; letter-spacing:.2em; }
+
 .nav__cta{
   border:1px solid rgba(255,255,255,.55); padding:11px 24px;
   transition:background .5s var(--e), color .5s var(--e), border-color .5s var(--e);
