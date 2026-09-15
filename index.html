@@ -28,7 +28,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/hero-ceremonia.jpg" media="(min-width: 761px)">
 <link rel="preload" as="image" href="assets/img/hero-ceremonia-m.jpg" media="(max-width: 760px)">
-<link rel="stylesheet" href="assets/css/styles.css?v=10">
+<link rel="stylesheet" href="assets/css/styles.css?v=12">
 
 <script type="application/ld+json">
 {
@@ -129,8 +129,9 @@
   <div class="hero__veil" aria-hidden="true"></div>
 
   <div class="hero__body">
-    <p class="hero__kicker"><span data-i18n="hero.kicker">Bodas &amp; celebraciones</span></p>
+    <p class="hero__kicker"><span data-i18n="hero.kicker">Planeación y diseño de bodas</span></p>
     <h1 class="hero__title split" data-i18n="hero.title">Que el día más importante <em>se sienta</em> como ustedes</h1>
+    <p class="hero__tag" data-i18n="hero.tag">Colombia &amp; destino internacional</p>
     <p class="hero__sub" data-i18n="hero.sub">Planeación, diseño y producción con una sola obsesión: que ustedes solo tengan que vivirla.</p>
     <div class="hero__actions">
       <a class="btn btn--light" href="#contacto"><span data-i18n="hero.cta">Agenda tu cita</span></a>
@@ -148,6 +149,17 @@
     <span class="hero__scrollLine" aria-hidden="true"></span>
   </a>
 </section>
+
+<!-- ───────────────────────── franja de lugares ─────────────────────────
+     TODO: reemplazar por los lugares reales donde Sandra ha trabajado. -->
+<div class="places">
+  <div class="wrap places__row">
+    <span data-i18n="loc.1"></span><i aria-hidden="true">·</i>
+    <span data-i18n="loc.2"></span><i aria-hidden="true">·</i>
+    <span data-i18n="loc.3"></span><i aria-hidden="true">·</i>
+    <span data-i18n="loc.4"></span>
+  </div>
+</div>
 
 <!-- ───────────────────────── 01 FILOSOFÍA ───────────────────────── -->
 <section class="section filosofia" id="filosofia">
@@ -213,12 +225,38 @@
   </div>
 </section>
 
+<!-- ───────────────────────── DESTINOS ───────────────────────── -->
+<section class="destinos" id="destinos">
+  <div class="destinos__band">
+    <img data-parallax="34" src="assets/img/dest-band.jpg" data-i18n-attr="alt:des.band" alt="" loading="lazy" width="2400" height="1000">
+  </div>
+
+  <div class="wrap destinos__grid">
+    <div class="destinos__text">
+      <p class="eyebrow reveal"><i>03</i> <span data-i18n="des.eyebrow">Destinos</span></p>
+      <h2 class="display split reveal" data-i18n="des.title">Donde ustedes quieran <em>casarse</em></h2>
+      <p class="lead reveal" data-i18n="des.lead"></p>
+
+      <ul class="destinos__list">
+        <li class="reveal"><h3 data-i18n="des.1h"></h3><p data-i18n="des.1p"></p></li>
+        <li class="reveal"><h3 data-i18n="des.2h"></h3><p data-i18n="des.2p"></p></li>
+        <li class="reveal"><h3 data-i18n="des.3h"></h3><p data-i18n="des.3p"></p></li>
+      </ul>
+    </div>
+
+    <div class="destinos__imgs">
+      <figure class="destinos__a reveal"><img data-parallax="16" src="assets/img/dest-1.jpg" data-i18n-attr="alt:des.img1" alt="" loading="lazy" width="900" height="1200"></figure>
+      <figure class="destinos__b reveal"><img data-parallax="-22" src="assets/img/dest-2.jpg" data-i18n-attr="alt:des.img2" alt="" loading="lazy" width="900" height="1200"></figure>
+    </div>
+  </div>
+</section>
+
 <!-- ───────────────────────── 03 PORTAFOLIO ───────────────────────── -->
 <section class="section portafolio" id="portafolio">
   <div class="wrap">
     <header class="section__head section__head--split">
       <div>
-        <p class="eyebrow reveal"><i>03</i> <span data-i18n="pf.eyebrow">Portafolio</span></p>
+        <p class="eyebrow reveal"><i>04</i> <span data-i18n="pf.eyebrow">Portafolio</span></p>
         <h2 class="display split reveal" data-i18n="pf.title">Algunas celebraciones</h2>
       </div>
       <p class="section__note reveal" data-i18n="pf.note"></p>
@@ -255,7 +293,7 @@
 <section class="section proceso" id="proceso">
   <div class="wrap">
     <header class="section__head">
-      <p class="eyebrow reveal"><i>04</i> <span data-i18n="pro.eyebrow">El proceso</span></p>
+      <p class="eyebrow reveal"><i>05</i> <span data-i18n="pro.eyebrow">El proceso</span></p>
       <h2 class="display split reveal" data-i18n="pro.title">Cómo trabajamos</h2>
     </header>
 
@@ -277,11 +315,18 @@
     </div>
 
     <div class="sandra__text">
-      <p class="eyebrow reveal"><i>05</i> <span data-i18n="san.eyebrow">Sandra</span></p>
+      <p class="eyebrow reveal"><i>06</i> <span data-i18n="san.eyebrow">Sandra</span></p>
       <h2 class="display split reveal" data-i18n="san.title">La persona detrás de cada decisión</h2>
       <!-- TODO: reemplazar por la bio real de Sandra, en los dos idiomas (assets/js/i18n.js). -->
       <p class="lead reveal" data-i18n="san.lead"></p>
       <p class="reveal" data-i18n="san.p2"></p>
+      <ul class="ficha reveal">
+        <li><span data-i18n="san.ficha1"></span><em data-i18n="san.ficha1v"></em></li>
+        <li><span data-i18n="san.ficha2"></span><em data-i18n="san.ficha2v"></em></li>
+        <li><span data-i18n="san.ficha3"></span><em data-i18n="san.ficha3v"></em></li>
+        <li><span data-i18n="san.ficha4"></span><em data-i18n="san.ficha4v"></em></li>
+      </ul>
+
       <p class="sign reveal">Sandra Riveros<span data-i18n="san.rol">Wedding Planner</span></p>
     </div>
   </div>
@@ -291,7 +336,7 @@
 <!-- TODO: reemplazar por testimonios reales, con autorización de los novios (assets/js/i18n.js). -->
 <section class="section testimonios" id="testimonios">
   <div class="wrap">
-    <p class="eyebrow eyebrow--center reveal"><i>06</i> <span data-i18n="tes.eyebrow">Lo que dicen</span></p>
+    <p class="eyebrow eyebrow--center reveal"><i>07</i> <span data-i18n="tes.eyebrow">Lo que dicen</span></p>
 
     <div class="slider" id="slider">
       <blockquote class="is-on"><p data-i18n="tes.1q"></p><cite data-i18n="tes.1c"></cite></blockquote>
@@ -311,7 +356,7 @@
 <section class="section contacto" id="contacto">
   <div class="wrap contacto__grid">
     <div class="contacto__text">
-      <p class="eyebrow reveal"><i>07</i> <span data-i18n="con.eyebrow">Contacto</span></p>
+      <p class="eyebrow reveal"><i>08</i> <span data-i18n="con.eyebrow">Contacto</span></p>
       <h2 class="display split reveal" data-i18n="con.title">Cuéntennos de su boda</h2>
       <p class="lead reveal" data-i18n="con.lead"></p>
 
@@ -397,7 +442,7 @@
   </figure>
 </div>
 
-<script src="assets/js/i18n.js?v=10"></script>
-<script src="assets/js/main.js?v=10"></script>
+<script src="assets/js/i18n.js?v=12"></script>
+<script src="assets/js/main.js?v=12"></script>
 </body>
 </html>

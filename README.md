@@ -32,6 +32,7 @@ Todos están marcados con `TODO` en el código.
 
 | Usuario de Instagram | `index.html`, sección Contacto |
 | Bio real de Sandra | `assets/js/i18n.js`, claves `san.lead` y `san.p2` (en los dos idiomas) |
+| **Lugares de la franja** | `assets/js/i18n.js`, claves `loc.1` a `loc.4` — ahora dicen Sabana de Bogotá / Cartagena / Caribe / Destino internacional; hay que dejar los reales |
 | **Testimonios reales** | `assets/js/i18n.js`, claves `tes.1q` a `tes.3c` — los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
 
 El formulario arma un mensaje de WhatsApp con los datos. Mientras `WHATSAPP`
@@ -54,7 +55,10 @@ el menú, arriba en escritorio y dentro del menú en móvil.
 
 ## Qué hace la página
 
-- Hero con tres fotos en fundido y zoom lento.
+- Hero con tres fotos en fundido y zoom lento, y el posicionamiento
+  «Colombia & destino internacional» bajo el titular.
+- Franja de lugares bajo el hero y sección propia de Destinos, con la ficha
+  de alcance e idiomas en la sección de Sandra.
 - Titulares que entran palabra por palabra al hacer scroll.
 - Servicios: al pasar el mouse por cada servicio, su foto sigue al cursor
   (en móvil la foto aparece debajo de cada uno).

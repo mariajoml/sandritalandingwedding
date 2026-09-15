@@ -68,12 +68,13 @@ h1,h2,h3{ margin:0; font-weight:400; }
   display:flex; align-items:center; gap:16px;
 }
 .eyebrow i{
-  font-family:var(--serif); font-style:normal;
-  font-size:1rem; letter-spacing:.1em; color:var(--ink);
+  font-family:var(--serif); font-style:italic; font-weight:300;
+  font-size:1.9rem; line-height:1; letter-spacing:.02em; color:var(--ink);
+  position:relative; top:.09em;
 }
 .eyebrow i::after{
   content:""; display:inline-block; vertical-align:middle;
-  width:34px; height:1px; background:var(--line); margin-left:16px;
+  width:38px; height:1px; background:var(--line); margin:0 0 .3em 18px;
 }
 .eyebrow--center{ justify-content:center; }
 
@@ -331,10 +332,15 @@ body.menu-open .nav__logo{ filter:none; }
   font-family:var(--serif); font-weight:300; color:#fff;
   font-size:clamp(2.6rem, 6.2vw, 5.6rem);
   line-height:1.05; letter-spacing:-.018em;
-  margin:0 0 30px; text-wrap:balance;
+  margin:0 0 22px; text-wrap:balance;
   text-shadow:0 2px 38px rgba(0,0,0,.45);
 }
 .hero__title em{ font-style:italic; }
+.hero__tag{
+  margin:0 0 28px; max-width:none; color:rgba(255,255,255,.96);
+  font-size:.68rem; letter-spacing:.34em; text-transform:uppercase;
+  text-shadow:0 1px 16px rgba(0,0,0,.7);
+}
 .hero__sub{
   color:rgba(255,255,255,.92); font-size:1.05rem;
   max-width:46ch; margin:0 auto 46px; text-wrap:balance;
@@ -380,6 +386,10 @@ body.menu-open .nav__logo{ filter:none; }
   display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(28px,4vw,64px);
 }
 .pillars li{ padding-top:26px; border-top:1px solid var(--line); }
+.pillars h3::before{
+  content:""; display:block; width:26px; height:1px;
+  background:var(--olive); margin-bottom:18px;
+}
 .pillars h3{
   font-family:var(--serif); font-size:1.5rem; margin-bottom:10px; font-weight:400;
 }
@@ -446,6 +456,80 @@ body.menu-open .nav__logo{ filter:none; }
   .srv__thumb img{ width:100%; aspect-ratio:3/2; object-fit:cover; }
 }
 
+
+/* =========================================================
+   FRANJA DE LUGARES
+   ========================================================= */
+
+.places{ background:var(--paper); border-bottom:1px solid var(--hair); }
+.places__row{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:12px clamp(16px,2.6vw,34px);
+  padding-block:26px;
+  font-size:.66rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--stone); text-align:center;
+}
+.places__row i{ font-style:normal; opacity:.45; }
+
+/* =========================================================
+   DESTINOS
+   ========================================================= */
+
+.destinos{ background:var(--paper); padding-bottom:var(--pad); }
+.destinos__band{
+  position:relative; height:clamp(300px,46vh,480px); overflow:hidden;
+  margin-bottom:clamp(64px,8vw,120px);
+}
+.destinos__band img{
+  position:absolute; inset:-7% 0; width:100%; height:114%;
+  object-fit:cover; will-change:transform;
+}
+.destinos__grid{
+  display:grid; grid-template-columns:1fr .82fr;
+  gap:clamp(44px,7vw,110px); align-items:center;
+}
+.destinos__list{
+  list-style:none; margin:clamp(40px,5vw,62px) 0 0; padding:0;
+  border-top:1px solid var(--hair);
+}
+.destinos__list li{ padding:22px 0; border-bottom:1px solid var(--hair); }
+.destinos__list h3{
+  font-family:var(--sans); font-weight:400;
+  font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+  margin-bottom:9px;
+}
+.destinos__list p{ margin:0; font-size:.95rem; }
+
+.destinos__imgs{ position:relative; padding:0 0 18% 12%; }
+.destinos__imgs figure{ margin:0; overflow:hidden; }
+.destinos__a img{ width:100%; aspect-ratio:3/4; object-fit:cover; will-change:transform; }
+.destinos__b{
+  position:absolute; left:0; bottom:0; width:52%;
+  border:10px solid var(--paper);
+}
+.destinos__b img{ width:100%; aspect-ratio:3/4; object-fit:cover; will-change:transform; }
+
+/* =========================================================
+   FICHA DE SANDRA
+   ========================================================= */
+
+.ficha{
+  list-style:none; margin:clamp(38px,4.5vw,56px) 0 0; padding:0;
+  border-top:1px solid var(--line);
+}
+.ficha li{
+  display:flex; gap:20px; align-items:baseline;
+  padding:14px 0; border-bottom:1px solid var(--hair);
+}
+.ficha span{
+  flex:0 0 clamp(96px,11vw,132px);
+  font-size:.62rem; letter-spacing:.24em; text-transform:uppercase; color:var(--stone);
+}
+.ficha em{
+  font-family:var(--serif); font-style:italic; font-weight:300;
+  font-size:1.12rem; color:var(--ink);
+}
+
 /* =========================================================
    PORTAFOLIO
    ========================================================= */
@@ -458,6 +542,10 @@ body.menu-open .nav__logo{ filter:none; }
 .g{
   margin:0 0 clamp(16px,1.8vw,28px);
   break-inside:avoid; position:relative; overflow:hidden;
+}
+/* la columna del medio baja un poco: rompe la retícula, se ve más editorial */
+@media (min-width:861px){
+  .gallery .g:nth-child(3n+2){ margin-top:clamp(26px,4vw,64px); }
 }
 .g img{ width:100%; height:auto; transition:transform 1.5s var(--slow); }
 .g:hover img{ transform:scale(1.05); }
@@ -512,13 +600,21 @@ body.menu-open .nav__logo{ filter:none; }
    ========================================================= */
 
 .steps{
+  --gap: clamp(28px,3.4vw,56px);
   list-style:none; margin:0; padding:0;
-  display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(28px,3.4vw,56px);
+  display:grid; grid-template-columns:repeat(4,1fr); gap:var(--gap);
 }
-.steps li{ padding-top:32px; border-top:1px solid var(--line); }
+.steps li{ padding-top:32px; border-top:1px solid var(--line); position:relative; }
+/* hairline vertical entre columnas */
+@media (min-width:1101px){
+  .steps li + li::after{
+    content:""; position:absolute; top:34px; bottom:6px;
+    left:calc(var(--gap) / -2); width:1px; background:var(--hair);
+  }
+}
 .steps__n{
-  display:block; font-family:var(--serif); font-size:.92rem;
-  letter-spacing:.16em; color:var(--stone); margin-bottom:16px;
+  display:block; font-family:var(--serif); font-style:italic; font-weight:300;
+  font-size:1.2rem; letter-spacing:.06em; color:var(--stone); margin-bottom:14px;
 }
 .steps h3{ font-family:var(--serif); font-size:1.6rem; font-weight:400; margin-bottom:12px; }
 .steps p{ font-size:.94rem; margin:0; }
@@ -704,9 +800,10 @@ body.lb-open{ overflow:hidden; }
 @media (max-width:860px){
   .nav__links{ display:none; }
   .burger{ display:flex; }
-  .filosofia__grid,.sandra__grid,.contacto__grid{ grid-template-columns:1fr; }
-  .filosofia__img,.sandra__imgs{ max-width:520px; }
+  .filosofia__grid,.sandra__grid,.contacto__grid,.destinos__grid{ grid-template-columns:1fr; }
+  .filosofia__img,.sandra__imgs,.destinos__imgs{ max-width:520px; }
   .sandra__imgs{ order:-1; }
+  .destinos__imgs{ padding:0 0 18% 14%; }
 }
 
 @media (max-width:760px){
@@ -721,6 +818,10 @@ body.lb-open{ overflow:hidden; }
   .f2{ grid-template-columns:1fr; }
   .srv__row{ grid-template-columns:44px 1fr; gap:0 16px; }
   .datos span{ flex-basis:88px; }
+  .ficha li{ flex-direction:column; gap:2px; }
+  .ficha span{ flex-basis:auto; }
+  .places__row{ letter-spacing:.2em; gap:10px 18px; }
+  .eyebrow i{ font-size:1.5rem; }
   .lb__nav{ font-size:2.6rem; }
   .lb__close{ font-size:2.2rem; top:14px; right:16px; }
 }
