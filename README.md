@@ -32,7 +32,6 @@ Todos están marcados con `TODO` en el código.
 | Usuario de Instagram | `index.html`, sección Contacto |
 | Bio real de Sandra | `index.html`, sección `#sandra` |
 | **Testimonios reales** | `index.html`, sección `#testimonios` — los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
-| Dominio en `og:image` | `index.html`, usar la URL absoluta cuando el sitio esté en línea |
 
 El formulario arma un mensaje de WhatsApp con los datos. Mientras `WHATSAPP`
 tenga el valor de ejemplo, abre el cliente de correo en su lugar, para que
@@ -64,6 +63,12 @@ negro sobre transparencia; el CSS lo vuelve blanco donde hace falta.
 
 `index.html` carga los assets con `?v=9`. Sube ese número al cambiarlos para
 que los navegadores no sirvan la versión vieja.
+
+## Dominio
+
+El sitio apunta a `https://sandrariveroswedding.com`. Ese dominio está escrito
+en `index.html` (canonical, Open Graph y datos estructurados), en `robots.txt`
+y en `sitemap.xml`. Si cambia, hay que actualizarlo en esos tres archivos.
 
 ## Publicar en Cloudflare Pages
 
