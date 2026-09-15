@@ -51,7 +51,6 @@
       'san.ficha4v': 'Bodas destino para parejas de cualquier parte',
 
       'hero.title': 'Que el día más importante <em>se sienta</em> como ustedes',
-      'hero.sub': 'Planeación, diseño y producción con una sola obsesión: que ustedes solo tengan que vivirla.',
       'hero.cta': 'Agenda tu cita',
       'hero.link': 'Ver portafolio',
       'hero.bajar': 'Bajar',
@@ -241,7 +240,6 @@
       'san.ficha4v': 'Destination weddings for couples from anywhere',
 
       'hero.title': 'A day that <em>feels</em> like the two of you',
-      'hero.sub': 'Planning, design and production with a single obsession: that all you have to do is live it.',
       'hero.cta': 'Book a call',
       'hero.link': 'See portfolio',
       'hero.bajar': 'Scroll down',
