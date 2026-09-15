@@ -276,31 +276,6 @@
     if (e.key === 'ArrowRight') show(at + 1);
   });
 
-  /* ---------- testimonios ---------- */
-  var quotes = $$('#slider blockquote');
-  var qDots = $$('#sliderDots button');
-  var qAt = 0, qTimer;
-
-  function goQuote(n) {
-    quotes[qAt].classList.remove('is-on');
-    qDots[qAt].classList.remove('is-on');
-    qAt = (n + quotes.length) % quotes.length;
-    quotes[qAt].classList.add('is-on');
-    qDots[qAt].classList.add('is-on');
-  }
-  function qPlay() {
-    clearInterval(qTimer);
-    if (reduce) return;
-    qTimer = setInterval(function () { goQuote(qAt + 1); }, 7000);
-  }
-  qDots.forEach(function (d, n) {
-    d.addEventListener('click', function () { goQuote(n); qPlay(); });
-  });
-  var slider = $('#slider');
-  slider.addEventListener('pointerenter', function () { clearInterval(qTimer); });
-  slider.addEventListener('pointerleave', qPlay);
-  qPlay();
-
   /* ---------- formulario → WhatsApp ---------- */
   var WHATSAPP = '573102913750';
   var CORREO = 'sandrariveroseventos@gmail.com';

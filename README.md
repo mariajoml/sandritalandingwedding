@@ -32,7 +32,7 @@ Todos están marcados con `TODO` en el código.
 
 | Confirmar «Pocas bodas al año» | `assets/js/i18n.js`, clave `fil.1p`: es un compromiso concreto con los novios; confirmar con Sandra |
 | Bio real de Sandra | `assets/js/i18n.js`, claves `san.lead` y `san.p2` (en los dos idiomas) |
-| **Testimonios reales** | `assets/js/i18n.js`, claves `tes.1q` a `tes.3c`: los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
+| Testimonios (sección retirada) | La sección se quitó por no tener reseñas reales. Cuando haya citas de novios con su autorización, se vuelve a montar |
 
 El formulario arma un mensaje de WhatsApp con los datos. Mientras `WHATSAPP`
 tenga el valor de ejemplo, abre el cliente de correo en su lugar, para que
@@ -63,7 +63,7 @@ el menú, arriba en escritorio y dentro del menú en móvil.
   (en móvil la foto aparece debajo de cada uno).
 - Portafolio en mosaico con cursor "Ver" y lightbox con teclado (← → Esc).
 - Parallax suave en las fotos grandes y barra de progreso de lectura.
-- Testimonios en carrusel y formulario con etiquetas flotantes.
+- Formulario con etiquetas flotantes que arma el mensaje de WhatsApp.
 
 Todo respeta `prefers-reduced-motion`: si el sistema pide menos animación,
 la página se queda quieta.

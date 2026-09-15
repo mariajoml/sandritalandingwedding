@@ -46,8 +46,8 @@
       'san.ficha2v': 'Colombia y destino internacional',
       'san.ficha3': 'Idiomas',
       'san.ficha3v': 'Español e inglés',
-      'san.ficha4': 'Especialidad',
-      'san.ficha4v': 'Bodas destino: que ustedes lleguen a la suya como invitados',
+      'san.ficha4': 'Para quién',
+      'san.ficha4v': 'Novios que se casan lejos de casa y quieren estar en la suya, no dirigirla',
 
       'hero.title': 'Que el día más importante <em>se sienta</em> como ustedes',
       'hero.cta': 'Hablemos de su boda',
@@ -138,15 +138,6 @@
       'san.rol': 'Wedding Planner',
       'san.img1': 'Sandra Riveros junto a una novia el día de su boda',
       'san.img2': 'Sandra Riveros terminando el montaje de una mesa',
-
-      'tes.eyebrow': 'Lo que dicen',
-      'tes.1q': '“Nos entregó el día completo. No tuvimos que resolver una sola cosa y todo salió exactamente como lo habíamos imaginado.”',
-      'tes.2q': '“Entendió lo que queríamos antes de que supiéramos explicarlo. El montaje nos dejó sin palabras.”',
-      'tes.3q': '“Nuestros invitados todavía nos hablan de esa boda. Y nosotros solo tuvimos que llegar y disfrutar.”',
-      'tes.1c': 'Novios 2024',
-      'tes.2c': 'Novios 2024',
-      'tes.3c': 'Novios 2023',
-      'tes.n': 'Testimonio',
 
       'mem.lead': 'Miembro de',
       'mem.1': 'Bodas ABC LATAM',
@@ -241,8 +232,8 @@
       'san.ficha2v': 'Colombia and destination worldwide',
       'san.ficha3': 'Languages',
       'san.ficha3v': 'Spanish and English',
-      'san.ficha4': 'Specialty',
-      'san.ficha4v': 'Destination weddings, so you arrive at your own as guests',
+      'san.ficha4': 'Who we work with',
+      'san.ficha4v': 'Couples marrying far from home who want to be at their wedding, not run it',
 
       'hero.title': 'A day that <em>feels</em> like the two of you',
       'hero.cta': 'Let’s talk about your wedding',
@@ -333,15 +324,6 @@
       'san.rol': 'Wedding Planner',
       'san.img1': 'Sandra Riveros with a bride on her wedding day',
       'san.img2': 'Sandra Riveros finishing a table setup',
-
-      'tes.eyebrow': 'What they say',
-      'tes.1q': '“She handed us the whole day. We did not have to solve a single thing and it turned out exactly as we had pictured it.”',
-      'tes.2q': '“She understood what we wanted before we knew how to explain it. The setup left us speechless.”',
-      'tes.3q': '“Our guests still talk to us about that wedding. And all we had to do was show up and enjoy it.”',
-      'tes.1c': 'Couple, 2024',
-      'tes.2c': 'Couple, 2024',
-      'tes.3c': 'Couple, 2023',
-      'tes.n': 'Testimonial',
 
       'mem.lead': 'Member of',
       'mem.1': 'Bodas ABC LATAM',
