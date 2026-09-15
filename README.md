@@ -1,4 +1,4 @@
-# Sandra Riveros — Wedding Planner
+# Sandra Riveros · Wedding Planner
 
 Landing page estática: HTML, CSS y JavaScript, sin dependencias ni build.
 Se publica tal cual en cualquier hosting.
@@ -30,10 +30,9 @@ Todos están marcados con `TODO` en el código.
 | Qué | Dónde |
 |---|---|
 
-| Confirmar «Pocas bodas al año» | `assets/js/i18n.js`, clave `fil.1p` — es un compromiso concreto con los novios; confirmar con Sandra |
+| Confirmar «Pocas bodas al año» | `assets/js/i18n.js`, clave `fil.1p`: es un compromiso concreto con los novios; confirmar con Sandra |
 | Bio real de Sandra | `assets/js/i18n.js`, claves `san.lead` y `san.p2` (en los dos idiomas) |
-| **Nombre de la segunda membresía** | `assets/js/i18n.js`, claves `mem.2` y `mem.2d` — «Worldwide Romance Society» no aparece como organización pública; confirmar el nombre exacto |
-| **Testimonios reales** | `assets/js/i18n.js`, claves `tes.1q` a `tes.3c` — los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
+| **Testimonios reales** | `assets/js/i18n.js`, claves `tes.1q` a `tes.3c`: los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
 
 El formulario arma un mensaje de WhatsApp con los datos. Mientras `WHATSAPP`
 tenga el valor de ejemplo, abre el cliente de correo en su lugar, para que

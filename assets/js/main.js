@@ -1,5 +1,5 @@
 /* =========================================================
-   Sandra Riveros — interacciones
+   Sandra Riveros · interacciones
    ========================================================= */
 (function () {
   'use strict';
@@ -330,12 +330,12 @@
     var lineas = [
       T('wa.saludo'),
       '',
-      T('wa.pareja') + ': ' + (d.get('nombre') || '—'),
-      T('wa.correo') + ': ' + (d.get('email') || '—'),
+      T('wa.pareja') + ': ' + (d.get('nombre') || 'sin definir'),
+      T('wa.correo') + ': ' + (d.get('email') || 'sin definir'),
       T('wa.fecha') + ': ' + (d.get('fecha') || sin),
       T('wa.invitados') + ': ' + (d.get('invitados') || sin),
       T('wa.lugar') + ': ' + (d.get('lugar') || sin),
-      T('wa.servicio') + ': ' + (d.get('servicio') || '—')
+      T('wa.servicio') + ': ' + (d.get('servicio') || 'sin definir')
     ];
     if (d.get('mensaje')) lineas.push('', d.get('mensaje'));
     var texto = encodeURIComponent(lineas.join('\n'));
@@ -343,7 +343,7 @@
     if (WHATSAPP.indexOf('X') !== -1) {
       // Sin número configurado: abrimos el correo para no perder la consulta.
       window.location.href = 'mailto:' + CORREO +
-        '?subject=' + encodeURIComponent(T('wa.asunto') + ' — ' + (d.get('nombre') || '')) +
+        '?subject=' + encodeURIComponent(T('wa.asunto') + ': ' + (d.get('nombre') || '')) +
         '&body=' + texto;
       return;
     }
