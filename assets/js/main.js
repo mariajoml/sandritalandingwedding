@@ -123,12 +123,17 @@
   var slideAt = 0;
   var timer;
 
+  var heroNum = $('#heroNum');
+  var heroTot = $('.hero__tot');
+  if (heroTot) heroTot.textContent = ('0' + slides.length).slice(-2);
+
   function goSlide(n) {
     slides[slideAt].classList.remove('is-active');
     dots[slideAt].classList.remove('is-on');
     slideAt = (n + slides.length) % slides.length;
     slides[slideAt].classList.add('is-active');
     dots[slideAt].classList.add('is-on');
+    if (heroNum) heroNum.textContent = ('0' + (slideAt + 1)).slice(-2);
   }
   function autoplay() {
     clearInterval(timer);

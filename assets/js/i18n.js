@@ -21,8 +21,7 @@
       'nav.cerrar': 'Cerrar menú',
       'menu.foot': 'Bogotá · Colombia y destino',
 
-      'hero.kicker': 'Planeación y diseño de bodas',
-      'hero.tag': 'Colombia &amp; destino internacional',
+      'hero.kicker': 'Wedding planner · Colombia &amp; destino internacional',
 
       'loc.1': 'Sabana de Bogotá',
       'loc.2': 'Cartagena',
@@ -212,8 +211,7 @@
       'nav.cerrar': 'Close menu',
       'menu.foot': 'Bogotá · Colombia &amp; destination',
 
-      'hero.kicker': 'Wedding planning &amp; design',
-      'hero.tag': 'Colombia &amp; destination worldwide',
+      'hero.kicker': 'Wedding planner · Colombia &amp; destination worldwide',
 
       'loc.1': 'Bogotá highlands',
       'loc.2': 'Cartagena',
