@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandra Riveros — Wedding Planner</title>
+<meta name="description" content="Planeación y diseño de bodas. Dirección creativa, producción y coordinación para celebraciones en Colombia y destino.">
+<link rel="icon" href="favicon.png" type="image/png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sandra Riveros — Wedding Planner">
+<meta property="og:description" content="Planeación y diseño de bodas. Para que ustedes solo tengan que vivirlas.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-ceremonia.jpg" media="(min-width: 761px)">
+<link rel="preload" as="image" href="assets/img/hero-ceremonia-m.jpg" media="(max-width: 760px)">
+<link rel="stylesheet" href="assets/css/styles.css?v=8">
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- cortina de entrada -->
+<div class="curtain" id="curtain">
+  <img src="assets/img/logo-sr.png" alt="" width="900" height="946">
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ───────────────────────── NAV ───────────────────────── -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Sandra Riveros, inicio">
+      <img class="nav__logo" src="assets/img/logo-sr.png" alt="Sandra Riveros — Wedding Planner" width="900" height="946">
+    </a>
+
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#filosofia"><span>Filosofía</span></a>
+      <a href="#servicios"><span>Servicios</span></a>
+      <a href="#portafolio"><span>Portafolio</span></a>
+      <a href="#sandra"><span>Sandra</span></a>
+      <a href="#contacto" class="nav__cta">Agenda tu cita</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menú móvil">
+    <a href="#filosofia"><em>01</em> Filosofía</a>
+    <a href="#servicios"><em>02</em> Servicios</a>
+    <a href="#portafolio"><em>03</em> Portafolio</a>
+    <a href="#proceso"><em>04</em> Proceso</a>
+    <a href="#sandra"><em>05</em> Sandra</a>
+    <a href="#contacto"><em>06</em> Contacto</a>
+  </nav>
+  <p class="menu__foot">Bogotá · Colombia y destino</p>
+</div>
+
+<main id="contenido">
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero__stage" aria-hidden="true">
+    <figure class="slide is-active">
+      <picture>
+        <source media="(max-width:760px)" srcset="assets/img/hero-ceremonia-m.jpg">
+        <img src="assets/img/hero-ceremonia.jpg" alt="" fetchpriority="high">
+      </picture>
+    </figure>
+    <figure class="slide">
+      <picture>
+        <source media="(max-width:760px)" srcset="assets/img/hero-carpa-m.jpg">
+        <img src="assets/img/hero-carpa.jpg" alt="" loading="lazy">
+      </picture>
+    </figure>
+    <figure class="slide">
+      <picture>
+        <source media="(max-width:760px)" srcset="assets/img/hero-faroles-m.jpg">
+        <img src="assets/img/hero-faroles.jpg" alt="" loading="lazy">
+      </picture>
+    </figure>
+  </div>
+
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__body">
+    <p class="hero__kicker"><span>Bodas &amp; celebraciones</span></p>
+    <h1 class="hero__title split">Que el día más importante <em>se sienta</em> como ustedes</h1>
+    <p class="hero__sub">Planeación, diseño y producción con una sola obsesión: que ustedes solo tengan que vivirla.</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="#contacto"><span>Agenda tu cita</span></a>
+      <a class="link link--light" href="#portafolio">Ver portafolio</a>
+    </div>
+  </div>
+
+  <div class="hero__dots" id="heroDots" aria-label="Imágenes">
+    <button class="is-on" aria-label="Imagen 1"></button>
+    <button aria-label="Imagen 2"></button>
+    <button aria-label="Imagen 3"></button>
+  </div>
+
+  <a class="hero__scroll" href="#filosofia" aria-label="Bajar">
+    <span class="hero__scrollLine" aria-hidden="true"></span>
+  </a>
+</section>
+
+<!-- ───────────────────────── 01 FILOSOFÍA ───────────────────────── -->
+<section class="section filosofia" id="filosofia">
+  <div class="wrap filosofia__grid">
+    <div class="filosofia__text">
+      <p class="eyebrow reveal"><i>01</i> Filosofía</p>
+      <h2 class="display split reveal">No hacemos bodas bonitas. Hacemos el día que ustedes van a <em>recordar completo</em>.</h2>
+      <p class="lead reveal">
+        Una boda se arma con cientos de decisiones pequeñas. Nuestro trabajo es tomarlas
+        con criterio, sostener el hilo de principio a fin y devolverles el día limpio:
+        sin pendientes, sin afanes, sin que nadie tenga que resolver nada a las once de la noche.
+      </p>
+    </div>
+
+    <figure class="filosofia__img reveal">
+      <img data-parallax="22" src="assets/img/intro-pareja.jpg" alt="Novios frente al lago después de la ceremonia" loading="lazy" width="1100" height="1467">
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <ul class="pillars">
+      <li class="reveal"><h3>Criterio</h3><p>Un concepto claro antes del primer mantel. Todo lo que entra a la boda responde a él.</p></li>
+      <li class="reveal"><h3>Ejecución</h3><p>Cronogramas, proveedores y montaje bajo una sola dirección. Nada queda al azar.</p></li>
+      <li class="reveal"><h3>Calma</h3><p>El lujo real de una boda no se ve: se siente en no tener que estar pendiente de nada.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── marquesina ───────────────────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Planeación integral</span><i>✦</i><span>Dirección de arte</span><i>✦</i><span>Bodas destino</span><i>✦</i><span>Coordinación del día</span><i>✦</i>
+    <span>Planeación integral</span><i>✦</i><span>Dirección de arte</span><i>✦</i><span>Bodas destino</span><i>✦</i><span>Coordinación del día</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ───────────────────────── 02 SERVICIOS ───────────────────────── -->
+<section class="section servicios" id="servicios">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal"><i>02</i> Servicios</p>
+      <h2 class="display split reveal">Cuatro formas de acompañarlos</h2>
+    </header>
+
+    <ul class="srv" id="srv">
+      <li class="srv__row reveal">
+        <span class="srv__n">01</span>
+        <div class="srv__body">
+          <h3>Planeación integral</h3>
+          <p>Desde la primera idea hasta el último invitado. Presupuesto, proveedores, cronograma y diseño bajo una sola batuta.</p>
+        </div>
+        <figure class="srv__thumb"><img src="assets/img/srv-planeacion.jpg" alt="Montaje de mesa durante la producción de una boda" loading="lazy" width="1000" height="1250"></figure>
+      </li>
+
+      <li class="srv__row reveal">
+        <span class="srv__n">02</span>
+        <div class="srv__body">
+          <h3>Diseño y dirección de arte</h3>
+          <p>Concepto, paleta, flores, luz y montaje. Cada elemento entra porque sostiene una idea, no porque estaba de moda.</p>
+        </div>
+        <figure class="srv__thumb"><img src="assets/img/srv-diseno.jpg" alt="Boceto a mano del diseño de una instalación floral" loading="lazy" width="900" height="1125"></figure>
+      </li>
+
+      <li class="srv__row reveal">
+        <span class="srv__n">03</span>
+        <div class="srv__body">
+          <h3>Bodas destino</h3>
+          <p>Hacienda, mar o sabana. Producimos fuera de la ciudad con equipo propio y logística resuelta de punta a punta.</p>
+        </div>
+        <figure class="srv__thumb"><img src="assets/img/srv-destino.jpg" alt="Carpa blanca montada en un jardín" loading="lazy" width="1000" height="1250"></figure>
+      </li>
+
+      <li class="srv__row reveal">
+        <span class="srv__n">04</span>
+        <div class="srv__body">
+          <h3>Coordinación del día</h3>
+          <p>Ustedes ya lo planearon todo. Nosotros lo ejecutamos para que el día de la boda solo tengan que estar presentes.</p>
+        </div>
+        <figure class="srv__thumb"><img src="assets/img/srv-coordinacion.jpg" alt="Entrada a la carpa iluminada con faroles" loading="lazy" width="1000" height="1250"></figure>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── 03 PORTAFOLIO ───────────────────────── -->
+<section class="section portafolio" id="portafolio">
+  <div class="wrap">
+    <header class="section__head section__head--split">
+      <div>
+        <p class="eyebrow reveal"><i>03</i> Portafolio</p>
+        <h2 class="display split reveal">Algunas celebraciones</h2>
+      </div>
+      <p class="section__note reveal">Ceremonias, recepciones y los detalles que las sostienen.</p>
+    </header>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <figure class="g reveal"><img src="assets/img/pf-01.jpg" alt="Mesa larga vestida en blanco con flores de temporada" loading="lazy" width="1100" height="1467"><figcaption>Mesa en blanco</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-03.jpg" alt="Recepción bajo carpa transparente con un árbol como centro" loading="lazy" width="1600" height="1067"><figcaption>Recepción bajo carpa</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-02.jpg" alt="Novios bailando sobre el prado al atardecer" loading="lazy" width="1100" height="1467"><figcaption>Después de la ceremonia</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-05.jpg" alt="Mesa principal con vajilla, flores y detalles en color" loading="lazy" width="1600" height="1067"><figcaption>Mesa principal</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-07.jpg" alt="El vestido de la novia colgado antes de la ceremonia" loading="lazy" width="1100" height="1467"><figcaption>Antes de todo</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-04.jpg" alt="Mesa de postres con piezas artesanales y velas" loading="lazy" width="1600" height="1067"><figcaption>Mesa de postres</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-10.jpg" alt="Altar al aire libre con madera y flores secas" loading="lazy" width="1100" height="1467"><figcaption>Altar</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-08.jpg" alt="Mesa vestida con bud vases y flores amarillas" loading="lazy" width="1600" height="1067"><figcaption>Flores de la sabana</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-09.jpg" alt="Lounge con sofá capitoneado y fondo de follaje" loading="lazy" width="1100" height="1467"><figcaption>Lounge</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-11.jpg" alt="Carpa de vela blanca montada sobre el prado" loading="lazy" width="1600" height="1067"><figcaption>Carpa de vela</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-12.jpg" alt="Numeración de mesa en papel sobre cristalería" loading="lazy" width="1100" height="1467"><figcaption>Papelería</figcaption></figure>
+    <figure class="g reveal"><img src="assets/img/pf-06.jpg" alt="Aviso escrito a mano entre follaje y flores secas" loading="lazy" width="1600" height="1067"><figcaption>Señalética</figcaption></figure>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><span>Ver</span></div>
+</section>
+
+<!-- ───────────────────────── BANDA ───────────────────────── -->
+<section class="band" aria-label="Cita">
+  <img class="band__bg" data-parallax="40" src="assets/img/band-noche.jpg" alt="" loading="lazy" width="2400" height="1100">
+  <blockquote class="band__quote reveal">
+    <p class="split">El lujo de una boda no está en lo que se ve. Está en que nadie tuvo que preocuparse.</p>
+  </blockquote>
+</section>
+
+<!-- ───────────────────────── 04 PROCESO ───────────────────────── -->
+<section class="section proceso" id="proceso">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal"><i>04</i> El proceso</p>
+      <h2 class="display split reveal">Cómo trabajamos</h2>
+    </header>
+
+    <ol class="steps">
+      <li class="reveal"><span class="steps__n">01</span><h3>Conversamos</h3><p>Una reunión sin costo para entender a la pareja, la fecha, el número de invitados y hasta dónde llega el presupuesto.</p></li>
+      <li class="reveal"><span class="steps__n">02</span><h3>Diseñamos</h3><p>Concepto, paleta, planos de montaje y selección de proveedores. Ustedes aprueban antes de que se mueva un peso.</p></li>
+      <li class="reveal"><span class="steps__n">03</span><h3>Producimos</h3><p>Contratación, cronograma, pruebas y visitas técnicas. Nos volvemos el único interlocutor de todos los proveedores.</p></li>
+      <li class="reveal"><span class="steps__n">04</span><h3>Celebramos</h3><p>Montaje, dirección del día y desmontaje. Ustedes llegan y la boda ya está lista.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────────────────── 05 SANDRA ───────────────────────── -->
+<section class="section sandra" id="sandra">
+  <div class="wrap sandra__grid">
+    <div class="sandra__imgs">
+      <figure class="sandra__a reveal"><img data-parallax="18" src="assets/img/sandra-retrato.jpg" alt="Sandra Riveros junto a una novia el día de su boda" loading="lazy" width="1100" height="1467"></figure>
+      <figure class="sandra__b reveal"><img data-parallax="-26" src="assets/img/sandra-detalle.jpg" alt="Sandra Riveros terminando el montaje de una mesa" loading="lazy" width="900" height="1200"></figure>
+    </div>
+
+    <div class="sandra__text">
+      <p class="eyebrow reveal"><i>05</i> Sandra</p>
+      <h2 class="display split reveal">La persona detrás de cada decisión</h2>
+      <!-- TODO: reemplazar por la bio real de Sandra (trayectoria, años, ciudades). -->
+      <p class="lead reveal">
+        Sandra Riveros dirige cada boda como si fuera la única del año. Está en la primera
+        reunión, en la visita técnica, en la prueba de menú y a las seis de la mañana del
+        día del montaje, revisando que cada mesa quede como se dibujó.
+      </p>
+      <p class="reveal">
+        Su manera de trabajar es simple y poco común: pocas bodas al año, atención completa
+        a cada una y una relación directa con los novios. Nada de intermediarios, nada de
+        equipos que aparecen el día del evento sin conocer la historia.
+      </p>
+      <p class="sign reveal">Sandra Riveros<span>Wedding Planner</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 06 TESTIMONIOS ───────────────────────── -->
+<!-- TODO: reemplazar por testimonios reales de los novios, con su autorización. -->
+<section class="section testimonios" id="testimonios">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center reveal"><i>06</i> Lo que dicen</p>
+
+    <div class="slider" id="slider">
+      <blockquote class="is-on"><p>“Nos entregó el día completo. No tuvimos que resolver una sola cosa y todo salió exactamente como lo habíamos imaginado.”</p><cite>Novios 2024</cite></blockquote>
+      <blockquote><p>“Entendió lo que queríamos antes de que supiéramos explicarlo. El montaje nos dejó sin palabras.”</p><cite>Novios 2024</cite></blockquote>
+      <blockquote><p>“Nuestros invitados todavía nos hablan de esa boda. Y nosotros solo tuvimos que llegar y disfrutar.”</p><cite>Novios 2023</cite></blockquote>
+    </div>
+
+    <div class="slider__dots" id="sliderDots">
+      <button class="is-on" aria-label="Testimonio 1"></button>
+      <button aria-label="Testimonio 2"></button>
+      <button aria-label="Testimonio 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 07 CONTACTO ───────────────────────── -->
+<section class="section contacto" id="contacto">
+  <div class="wrap contacto__grid">
+    <div class="contacto__text">
+      <p class="eyebrow reveal"><i>07</i> Contacto</p>
+      <h2 class="display split reveal">Cuéntennos de su boda</h2>
+      <p class="lead reveal">
+        La primera conversación no tiene costo ni compromiso. Escríbannos con la fecha y el
+        lugar que tienen en mente y les respondemos con disponibilidad y siguientes pasos.
+      </p>
+
+      <!-- TODO: reemplazar por los datos reales de contacto. -->
+      <ul class="datos reveal">
+        <li><span>WhatsApp</span><a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener">+57 XXX XXX XXXX</a></li>
+        <li><span>Correo</span><a href="mailto:hola@sandrariveros.com">hola@sandrariveros.com</a></li>
+        <li><span>Instagram</span><a href="https://instagram.com/" target="_blank" rel="noopener">@sandrariveros</a></li>
+        <li><span>Base</span><em>Bogotá · Colombia y destino</em></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <div class="f"><input id="f-nombre" name="nombre" type="text" required autocomplete="name" placeholder=" "><label for="f-nombre">Nombres de la pareja</label></div>
+      <div class="f"><input id="f-email" name="email" type="email" required autocomplete="email" placeholder=" "><label for="f-email">Correo</label></div>
+      <div class="f2">
+        <div class="f"><input id="f-fecha" name="fecha" type="text" placeholder=" "><label for="f-fecha">Fecha estimada</label></div>
+        <div class="f"><input id="f-invitados" name="invitados" type="text" placeholder=" "><label for="f-invitados">Invitados</label></div>
+      </div>
+      <div class="f"><input id="f-lugar" name="lugar" type="text" placeholder=" "><label for="f-lugar">Lugar o ciudad</label></div>
+      <div class="f f--sel">
+        <select id="f-servicio" name="servicio">
+          <option>Planeación integral</option>
+          <option>Diseño y dirección de arte</option>
+          <option>Boda destino</option>
+          <option>Coordinación del día</option>
+          <option>Todavía no lo tengo claro</option>
+        </select>
+        <label for="f-servicio">¿Qué necesitan?</label>
+      </div>
+      <div class="f"><textarea id="f-mensaje" name="mensaje" rows="3" placeholder=" "></textarea><label for="f-mensaje">Cuéntennos un poco más</label></div>
+
+      <button class="btn btn--dark btn--full" type="submit"><span>Enviar por WhatsApp</span></button>
+      <p class="form__alt">¿Prefieren correo? <a href="mailto:hola@sandrariveros.com">hola@sandrariveros.com</a></p>
+      <p class="form__err" id="formErr" role="alert" hidden></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ───────────────────────── FOOTER ───────────────────────── -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <img class="foot__logo" src="assets/img/logo-sr.png" alt="Sandra Riveros — Wedding Planner" width="900" height="946" loading="lazy">
+    <nav class="foot__nav" aria-label="Pie de página">
+      <a href="#filosofia">Filosofía</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#sandra">Sandra</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <p class="foot__legal">© <span id="year">2026</span> Sandra Riveros · Wedding Planner · Bogotá, Colombia</p>
+  </div>
+</footer>
+
+<!-- ───────────────────────── LIGHTBOX ───────────────────────── -->
+<div class="lb" id="lb" hidden>
+  <button class="lb__close" id="lbClose" aria-label="Cerrar">&times;</button>
+  <button class="lb__nav lb__nav--prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+  <button class="lb__nav lb__nav--next" id="lbNext" aria-label="Siguiente">&#8250;</button>
+  <figure class="lb__fig">
+    <img id="lbImg" src="" alt="">
+    <figcaption><span id="lbCap"></span><em id="lbCount"></em></figcaption>
+  </figure>
+</div>
+
+<script src="assets/js/main.js?v=8"></script>
+</body>
+</html>
