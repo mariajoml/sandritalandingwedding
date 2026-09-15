@@ -28,8 +28,7 @@ Todos están marcados con `TODO` en el código.
 
 | Qué | Dónde |
 |---|---|
-| Número de WhatsApp real | `assets/js/main.js` (`WHATSAPP`) y `index.html` (enlace `wa.me`) |
-| Correo real | `index.html` (3 lugares) y `assets/js/main.js` (`CORREO`) |
+
 | Usuario de Instagram | `index.html`, sección Contacto |
 | Bio real de Sandra | `index.html`, sección `#sandra` |
 | **Testimonios reales** | `index.html`, sección `#testimonios` — los tres actuales son texto de ejemplo y deben reemplazarse por citas reales, con autorización de los novios |
@@ -63,7 +62,7 @@ negro sobre transparencia; el CSS lo vuelve blanco donde hace falta.
 
 ## Al editar CSS o JS
 
-`index.html` carga los assets con `?v=8`. Sube ese número al cambiarlos para
+`index.html` carga los assets con `?v=9`. Sube ese número al cambiarlos para
 que los navegadores no sirvan la versión vieja.
 
 ## Publicar en GitHub Pages

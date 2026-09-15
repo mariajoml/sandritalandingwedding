@@ -286,9 +286,8 @@
   qPlay();
 
   /* ---------- formulario → WhatsApp ---------- */
-  /* TODO: cambiar WHATSAPP por el número real, formato internacional sin signos. */
-  var WHATSAPP = '57XXXXXXXXXX';
-  var CORREO = 'hola@sandrariveros.com';
+  var WHATSAPP = '573102913750';
+  var CORREO = 'sandrariveroseventos@gmail.com';
 
   var form = $('#form');
   var err = $('#formErr');
