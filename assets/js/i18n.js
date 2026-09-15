@@ -147,6 +147,12 @@
       'tes.3c': 'Novios 2023',
       'tes.n': 'Testimonio',
 
+      'mem.lead': 'Miembro de',
+      'mem.1': 'Bodas ABC LATAM',
+      'mem.1d': 'Association of Bridal Consultants · desde 1955',
+      'mem.2': 'Worldwide Romance Society',
+      'mem.2d': 'Red internacional de profesionales de bodas',
+
       'con.eyebrow': 'Contacto',
       'con.title': 'Cuéntennos de su boda',
       'con.lead': 'La primera conversación no tiene costo ni compromiso. Escríbannos con la fecha y el lugar que tienen en mente y les respondemos con disponibilidad y siguientes pasos.',
@@ -335,6 +341,12 @@
       'tes.2c': 'Couple, 2024',
       'tes.3c': 'Couple, 2023',
       'tes.n': 'Testimonial',
+
+      'mem.lead': 'Member of',
+      'mem.1': 'Bodas ABC LATAM',
+      'mem.1d': 'Association of Bridal Consultants · since 1955',
+      'mem.2': 'Worldwide Romance Society',
+      'mem.2d': 'International network of wedding professionals',
 
       'con.eyebrow': 'Contact',
       'con.title': 'Tell us about your wedding',
