@@ -23,10 +23,9 @@
 
       'hero.kicker': 'Wedding planner · Colombia &amp; destino internacional',
 
-      'loc.1': 'Sabana de Bogotá',
-      'loc.2': 'Cartagena',
-      'loc.3': 'Caribe',
-      'loc.4': 'Destino internacional',
+      'loc.1': 'Bodas en Colombia y en el exterior',
+      'loc.2': 'Atención en español e inglés',
+      'loc.3': 'Advanced Member · Bodas ABC',
 
       'des.eyebrow': 'Destinos',
       'des.title': 'Donde ustedes quieran <em>casarse</em>',
@@ -48,7 +47,7 @@
       'san.ficha3': 'Idiomas',
       'san.ficha3v': 'Español e inglés',
       'san.ficha4': 'Especialidad',
-      'san.ficha4v': 'Bodas destino para parejas de cualquier parte',
+      'san.ficha4v': 'Bodas destino: que ustedes lleguen a la suya como invitados',
 
       'hero.title': 'Que el día más importante <em>se sienta</em> como ustedes',
       'hero.cta': 'Agenda tu cita',
@@ -58,14 +57,16 @@
 
       'fil.eyebrow': 'Filosofía',
       'fil.title': 'No hacemos bodas bonitas. Hacemos el día que ustedes van a <em>recordar completo</em>.',
-      'fil.lead': 'Una boda se arma con cientos de decisiones pequeñas. Nuestro trabajo es tomarlas con criterio, sostener el hilo de principio a fin y devolverles el día limpio: sin pendientes, sin afanes, sin que nadie tenga que resolver nada a las once de la noche.',
+      'fil.lead': 'Toda boda empieza igual: con la historia de ustedes y con la clase de fin de semana que quieren que sus invitados recuerden. De ahí sale lo demás — el lugar, la mesa, la hora a la que suena la primera canción. Nuestro trabajo es tomar esas cientos de decisiones pequeñas con criterio y devolverles el día limpio.',
       'fil.img': 'Novios frente al lago después de la ceremonia',
-      'fil.1h': 'Criterio',
-      'fil.1p': 'Un concepto claro antes del primer mantel. Todo lo que entra a la boda responde a él.',
-      'fil.2h': 'Ejecución',
-      'fil.2p': 'Cronogramas, proveedores y montaje bajo una sola dirección. Nada queda al azar.',
-      'fil.3h': 'Calma',
-      'fil.3p': 'El lujo real de una boda no se ve: se siente en no tener que estar pendiente de nada.',
+      'fil.1h': 'Pocas bodas al año',
+      'fil.1p': 'Sandra no toma más de las que puede dirigir en persona. De la primera reunión al último brindis, ustedes hablan siempre con ella.',
+      'fil.2h': 'La logística, primero',
+      'fil.2p': 'Una boda hermosa se cae si el cronograma falla. Resolvemos lo invisible — tiempos, proveedores, montaje — y recién ahí el diseño fluye solo.',
+      'fil.3h': 'Criterio local, cabeza internacional',
+      'fil.3p': 'Conocemos los lugares y a la gente que trabaja en ellos, dentro y fuera de Colombia. Sus invitados llegan de donde lleguen y todo encaja.',
+      'fil.4h': 'El fin de semana completo',
+      'fil.4p': 'No solo la ceremonia: la llegada, la cena de la víspera, el desayuno del domingo. Eso es lo que de verdad se recuerda.',
 
       'mq.1': 'Planeación integral',
       'mq.2': 'Dirección de arte',
@@ -149,7 +150,7 @@
 
       'mem.lead': 'Miembro de',
       'mem.1': 'Bodas ABC LATAM',
-      'mem.1d': 'Association of Bridal Consultants · desde 1955',
+      'mem.1d': 'Advanced Member · Association of Bridal Consultants, desde 1955',
       'mem.2': 'Worldwide Romance Society',
       'mem.2d': 'Red internacional de profesionales de bodas',
 
@@ -218,10 +219,9 @@
 
       'hero.kicker': 'Wedding planner · Colombia &amp; destination worldwide',
 
-      'loc.1': 'Bogotá highlands',
-      'loc.2': 'Cartagena',
-      'loc.3': 'The Caribbean',
-      'loc.4': 'Worldwide',
+      'loc.1': 'Weddings in Colombia and abroad',
+      'loc.2': 'We work in Spanish and English',
+      'loc.3': 'Advanced Member · Bodas ABC',
 
       'des.eyebrow': 'Destinations',
       'des.title': 'Wherever you want to <em>get married</em>',
@@ -243,7 +243,7 @@
       'san.ficha3': 'Languages',
       'san.ficha3v': 'Spanish and English',
       'san.ficha4': 'Specialty',
-      'san.ficha4v': 'Destination weddings for couples from anywhere',
+      'san.ficha4v': 'Destination weddings — so you arrive at your own as guests',
 
       'hero.title': 'A day that <em>feels</em> like the two of you',
       'hero.cta': 'Book a call',
@@ -253,14 +253,16 @@
 
       'fil.eyebrow': 'Philosophy',
       'fil.title': 'We don’t make pretty weddings. We make the day you’ll <em>remember whole</em>.',
-      'fil.lead': 'A wedding is built from hundreds of small decisions. Our job is to make them with judgement, hold the thread from beginning to end, and hand you back a clean day: nothing pending, nothing rushed, nobody solving anything at eleven at night.',
+      'fil.lead': 'Every wedding starts the same way: with your story, and with the kind of weekend you want your guests to remember. Everything else follows from there — the venue, the table, the hour the first song plays. Our job is to make those hundreds of small decisions with judgement and hand you back a clean day.',
       'fil.img': 'The couple by the lake after the ceremony',
-      'fil.1h': 'Judgement',
-      'fil.1p': 'A clear concept before the first linen. Everything that enters the wedding answers to it.',
-      'fil.2h': 'Execution',
-      'fil.2p': 'Timelines, vendors and setup under one direction. Nothing is left to chance.',
-      'fil.3h': 'Calm',
-      'fil.3p': 'The real luxury of a wedding is invisible: it is not having to keep an eye on anything.',
+      'fil.1h': 'A few weddings a year',
+      'fil.1p': 'Sandra takes on only as many as she can run herself. From the first meeting to the last toast, you always talk to her.',
+      'fil.2h': 'Logistics first',
+      'fil.2p': 'A beautiful wedding falls apart if the timeline does. We solve the invisible part — timings, vendors, setup — and only then does the design take care of itself.',
+      'fil.3h': 'Local knowledge, global mind',
+      'fil.3p': 'We know the venues and the people who work in them, in Colombia and abroad. Wherever your guests come from, it all fits together.',
+      'fil.4h': 'The whole weekend',
+      'fil.4p': 'Not just the ceremony: the arrival, the dinner the night before, Sunday breakfast. That is what people actually remember.',
 
       'mq.1': 'Full planning',
       'mq.2': 'Art direction',
@@ -344,7 +346,7 @@
 
       'mem.lead': 'Member of',
       'mem.1': 'Bodas ABC LATAM',
-      'mem.1d': 'Association of Bridal Consultants · since 1955',
+      'mem.1d': 'Advanced Member · Association of Bridal Consultants, since 1955',
       'mem.2': 'Worldwide Romance Society',
       'mem.2d': 'International network of wedding professionals',
 
