@@ -29,7 +29,6 @@ Todos están marcados con `TODO` en el código.
 
 | Qué | Dónde |
 |---|---|
-
 | Confirmar «Pocas bodas al año» | `assets/js/i18n.js`, clave `fil.1p`: es un compromiso concreto con los novios; confirmar con Sandra |
 | Bio real de Sandra | `assets/js/i18n.js`, claves `san.lead` y `san.p2` (en los dos idiomas) |
 | Testimonios (sección retirada) | La sección se quitó por no tener reseñas reales. Cuando haya citas de novios con su autorización, se vuelve a montar |
@@ -79,7 +78,7 @@ negro sobre transparencia; el CSS lo vuelve blanco donde hace falta.
 
 ## Al editar CSS o JS
 
-`index.html` carga los assets con `?v=9`. Sube ese número al cambiarlos para
+`index.html` carga los assets con `?v=22`. Sube ese número al cambiarlos para
 que los navegadores no sirvan la versión vieja.
 
 ## Dominio

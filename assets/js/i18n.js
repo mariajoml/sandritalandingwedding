@@ -46,8 +46,6 @@
       'san.ficha2v': 'Colombia y destino internacional',
       'san.ficha3': 'Idiomas',
       'san.ficha3v': 'Español e inglés',
-      'san.ficha4': 'Para quién',
-      'san.ficha4v': 'Novios que se casan lejos de casa y quieren estar en la suya, no dirigirla',
 
       'hero.title': 'Que el día más importante <em>se sienta</em> como ustedes',
       'hero.cta': 'Hablemos de su boda',
@@ -232,8 +230,6 @@
       'san.ficha2v': 'Colombia and destination worldwide',
       'san.ficha3': 'Languages',
       'san.ficha3v': 'Spanish and English',
-      'san.ficha4': 'Who we work with',
-      'san.ficha4v': 'Couples marrying far from home who want to be at their wedding, not run it',
 
       'hero.title': 'A day that <em>feels</em> like the two of you',
       'hero.cta': 'Let’s talk about your wedding',
