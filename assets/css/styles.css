@@ -200,8 +200,10 @@ p{ color:var(--ink-soft); max-width:60ch; }
 }
 .nav.is-hidden{ transform:translateY(-100%); }
 .nav__inner{
-  max-width:var(--maxw); margin-inline:auto;
-  padding:16px var(--gut);
+  /* la nav va de borde a borde: el logo y el menú quedan en las esquinas,
+     no encajonados en el ancho del contenido */
+  max-width:none;
+  padding:16px clamp(18px,2.6vw,48px);
   display:flex; align-items:center; justify-content:space-between; gap:24px;
 }
 .nav__brand{ display:block; line-height:0; }

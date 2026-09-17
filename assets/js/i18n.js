@@ -7,8 +7,8 @@
 
   var DICT = {
     es: {
-      'meta.title': 'Sandra Riveros · Wedding Planner',
-      'meta.desc': 'Planeación y diseño de bodas. Dirección creativa, producción y coordinación para celebraciones en Colombia y destino.',
+      'meta.title': 'Wedding Planner en Bogotá · Bodas destino en Colombia | Sandra Riveros',
+      'meta.desc': 'Wedding planner en Bogotá. Planeación, diseño y coordinación de bodas en Colombia y en el exterior. Advanced Member de Bodas ABC. Primera cita sin costo.',
 
       'nav.filosofia': 'Filosofía',
       'nav.servicios': 'Servicios',
@@ -138,7 +138,7 @@
       'san.img2': 'Sandra Riveros terminando el montaje de una mesa',
 
       'mem.lead': 'Miembro de',
-      'mem.1': 'Bodas ABC LATAM',
+      'mem.1': 'Bodas ABC',
       'mem.1b': 'Worldwide Romance Society',
       'mem.1d': 'Advanced Member',
 
@@ -191,8 +191,8 @@
     },
 
     en: {
-      'meta.title': 'Sandra Riveros · Wedding Planner',
-      'meta.desc': 'Wedding planning and design. Creative direction, production and coordination for celebrations in Colombia and abroad.',
+      'meta.title': 'Wedding Planner in Colombia · Destination Weddings | Sandra Riveros',
+      'meta.desc': 'Wedding planner based in Bogotá. Planning, design and coordination for weddings in Colombia and abroad. Advanced Member of Bodas ABC. First call free.',
 
       'nav.filosofia': 'Philosophy',
       'nav.servicios': 'Services',
@@ -322,7 +322,7 @@
       'san.img2': 'Sandra Riveros finishing a table setup',
 
       'mem.lead': 'Member of',
-      'mem.1': 'Bodas ABC LATAM',
+      'mem.1': 'Bodas ABC',
       'mem.1b': 'Worldwide Romance Society',
       'mem.1d': 'Advanced Member',
 
