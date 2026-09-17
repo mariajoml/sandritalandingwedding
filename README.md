@@ -109,3 +109,8 @@ pantalla indica el CNAME que hay que crear. El HTTPS lo emite Cloudflare.
 
 El archivo `_headers` define caché y cabeceras de seguridad; lo lee Cloudflare
 Pages automáticamente.
+
+## Nota sobre `_headers`
+
+Ese archivo solo lo lee Cloudflare Pages. En GitHub Pages es inofensivo pero no
+hace nada: las cabeceras de caché las pone GitHub.
